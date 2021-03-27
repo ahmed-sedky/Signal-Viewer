@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1083</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1081</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayoutecg"/>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>1081</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayoutemg"/>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>380</y>
+      <width>1081</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayouteeg"/>
+   </widget>
+   <widget class="QPushButton" name="startemg">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start</string>
+    </property>
+    <property name="shortcut">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="starteeg">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start</string>
+    </property>
+    <property name="shortcut">
+     <string>Z</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backwordemg">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>backword</string>
+    </property>
+    <property name="shortcut">
+     <string>F</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backwordecg">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>backword</string>
+    </property>
+    <property name="shortcut">
+     <string>R</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resumeecg">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resume</string>
+    </property>
+    <property name="shortcut">
+     <string>E</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resumeemg">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resume</string>
+    </property>
+    <property name="shortcut">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resumeeeg">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>resume</string>
+    </property>
+    <property name="shortcut">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopecg">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stop</string>
+    </property>
+    <property name="shortcut">
+     <string>W</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopemg">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stop</string>
+    </property>
+    <property name="shortcut">
+     <string>S</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startecg">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start</string>
+    </property>
+    <property name="shortcut">
+     <string>Q</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopeeg">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stop</string>
+    </property>
+    <property name="shortcut">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zoomineeg">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zoom in</string>
+    </property>
+    <property name="shortcut">
+     <string>N</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zoomoutecg">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zoom out</string>
+    </property>
+    <property name="shortcut">
+     <string>U</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zoominemg">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zoom in</string>
+    </property>
+    <property name="shortcut">
+     <string>H</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zoominecg">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zoom in</string>
+    </property>
+    <property name="shortcut">
+     <string>Y</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwordeeg">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>forword</string>
+    </property>
+    <property name="shortcut">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwordemg">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>forword</string>
+    </property>
+    <property name="shortcut">
+     <string>G</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwordecg">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>720</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>forword</string>
+    </property>
+    <property name="shortcut">
+     <string>T</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backwordeeg">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>backword</string>
+    </property>
+    <property name="shortcut">
+     <string>V</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zoomouteeg">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>800</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zoom out</string>
+    </property>
+    <property name="shortcut">
+     <string>M</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zoomoutemg">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>760</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zoom out</string>
+    </property>
+    <property name="shortcut">
+     <string>J</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>760</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>EMG</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>800</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>EEG</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>720</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ECG</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1083</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionopen_ecg"/>
+    <addaction name="actionopen_EEG"/>
+    <addaction name="actionopen_EMG"/>
+   </widget>
+   <widget class="QMenu" name="menuprint">
+    <property name="title">
+     <string>print</string>
+    </property>
+    <addaction name="actionexport_PDF"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuprint"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen_ecg">
+   <property name="text">
+    <string>open ECG</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="actionopen_EEG">
+   <property name="text">
+    <string>open EEG</string>
+   </property>
+   <property name="shortcut">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="actionopen_EMG">
+   <property name="text">
+    <string>open EMG</string>
+   </property>
+   <property name="shortcut">
+    <string>3</string>
+   </property>
+  </action>
+  <action name="actionExport_report">
+   <property name="text">
+    <string>Export report</string>
+   </property>
+  </action>
+  <action name="actionexport_PDF">
+   <property name="text">
+    <string>export PDF</string>
+   </property>
+   <property name="shortcut">
+    <string>P</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

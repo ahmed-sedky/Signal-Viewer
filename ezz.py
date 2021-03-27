@@ -6,8 +6,10 @@ import numpy as np
 import csv
 import time
 import math
+import matplotlib.figure as fg
 flag=True
 x=0
+
 
     def backword(self):
         plt.close()
@@ -89,7 +91,8 @@ x=0
 
     def start(self):
         plt.close()
-        fig, ax = plt.subplots()
+        #fig, ax = plt.subplots()
+        fig=fg()
         global x
         x=0
         global flag
@@ -106,12 +109,12 @@ x=0
                 data_set1= pd.read_csv('ecg1.csv')
                 xa=data_set1.iloc[2*int(((i-100)+abs(i-100))/2):2*i,0].values
                 y1=data_set1.iloc[2*int(((i-100)+abs(i-100))/2):2*i,1].values
-                plt.cla()
-                axes = plt.gca()
+                #fig.cla()
+                axes = fig.gca()
                 axes.set_ylim([min(yb),max(yb)])
                 axes.plot(xa, y1, label='Channel 1')
-                plt.legend(loc='upper left')
-                plt.tight_layout()
-        self.ani = FuncAnimation(plt.gcf(), animate, interval=0.001)
+                #plt.legend(loc='upper left')
+                #plt.tight_layout()
+        self.ani = FuncAnimation(fig., animate, interval=0.001)
         plt.tight_layout()
         plt.show()
